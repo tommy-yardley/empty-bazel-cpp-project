@@ -3,4 +3,5 @@ load("@rules_cc//cc:defs.bzl", "cc_binary")
 cc_binary(
     name = "hello-world",
     srcs = ["main.cpp"],
+    deps = ["@boost//:format"],
 )
